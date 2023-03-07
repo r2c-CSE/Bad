@@ -12,7 +12,7 @@ public class Bad{
 
   public byte[] bad2(String password) {
     // ruleid: use-of-md5-digest-utils
-    byte[] hashValue = DigestUtils.getMd5Digest().digest(password.getBytes());
+    byte[] hashValue = DigestUtils.getSha512Digest().digest(password.getBytes());
     return hashValue;
   }
 
