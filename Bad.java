@@ -4,7 +4,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 public class Bad{
   public byte[] bad1(String password) {
     // ok: use-of-md5-digest-utils
-    MessageDigest md5Digest = MessageDigest.getInstance("MD5");
+    MessageDigest md5Digest = MessageDigest.getInstance("SHA512");
     md5Digest.update(password.getBytes());
     byte[] hashValue = md5Digest.digest();
     return hashValue;
