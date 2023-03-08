@@ -1,6 +1,7 @@
 import java.security.MessageDigest;
 import org.apache.commons.codec.digest.DigestUtils;
 
+//I remove one rule
 public class Bad{
   public byte[] bad1(String password) {
     // ok: use-of-md5-digest-utils
